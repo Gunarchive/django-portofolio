@@ -1,0 +1,280 @@
+{% load static %}
+<!doctype html>
+
+<html lang="en">
+   
+   
+    <head>
+       
+       
+        <!-- META -->
+        <meta charset="utf-8">
+        <meta name="robots" content="noodp">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+       
+        <!-- PAGE TITLE -->
+        <title>Ethan - Identity</title>
+       
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="{% static 'blog/img/favicon.png'%}">
+       
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+       
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'blog/css/plugins.css'%}">
+        <link rel="stylesheet" type="text/css" href="{% static 'blog/css/main.css'%}">
+        
+        
+    </head>
+
+   
+    <body>
+    
+       
+        <!-- PRELOADER -->
+        <div class="preloader">
+           
+            <div class="spinner"></div>
+            
+        </div>
+        <!-- /PRELOADER -->
+    
+        
+        <!-- IMAGE CONTAINER -->
+        <div class="image-container">
+           
+            <div class="background-img"></div>
+
+        </div>
+        <!-- /IMAGE CONTAINER -->
+
+
+        <!-- CONTENT AREA -->
+        <div class="content-area">
+
+
+            <!-- CONTENT AREA INNER --> 
+            <div class="content-area-inner">
+
+
+                <!-- INTRO -->
+                <section id="intro">
+
+
+                    <!-- CONTAINER MID -->
+                    <div class="container-mid">
+
+                       
+                        <!-- ANIMATION CONTAINER -->
+                        <div class="animation-container animation-fade-right" data-animation-delay="0">
+                        
+                            <h1>I’m {{Nama}} and I design Stuff.</h1>
+                        
+                        </div>
+                        <!-- /ANIMATION CONTAINER -->
+                        
+                        
+                        <!-- ANIMATION CONTAINER -->
+                        <div class="animation-container animation-fade-right" data-animation-delay="200">
+                           
+                            <a href="#about" class="smooth-scroll">Learn More<div class="circle"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-down" aria-hidden="true"></i></div></a>
+                            
+                        </div>
+                        <!-- /ANIMATION CONTAINER -->
+
+
+                    </div>
+                    <!-- /CONTAINER MID -->
+
+
+                </section>
+                <!-- /INTRO -->
+
+
+                <!-- ABOUT -->
+                <section id="about">
+
+
+                    <h3 class="headline scroll-animated">About Me</h3>
+                    
+                    <p class="scroll-animated">{{detail}}</p>
+
+                    <p class="scroll-animated">{{detail}}</p>
+                    
+
+
+                </section>
+                <!-- /ABOUT -->
+                
+                
+                <!-- SERVICE -->
+                <section id="service">
+
+
+                    <h3 class="headline scroll-animated">{{about}}</h3>
+                    
+                    
+                    <!-- SERVICE LIST -->
+                    <ul class="services-list">
+                       
+                       
+                        <!-- SERVICE ITEM -->
+                        <li class="service-item scroll-animated">
+                           
+                           
+                            <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapse-item-1" aria-expanded="false">{{Nama}}</button>
+                            
+                            
+                            <!-- COLLAPSE CONTENT -->
+                            <div class="collapse" id="collapse-item-1">
+                               
+                               
+                                <!-- COLLAPSE CONTENT INNER -->
+                                <div class="well">
+                                   
+                                <p>{{detail}}</p>                                    
+                                </div>
+                                <!-- /COLLAPSE CONTENT INNER -->
+                                
+                                
+                            </div>
+                            <!-- /COLLAPSE CONTENT -->
+                            
+                            
+                        </li>
+                        <!-- /SERVICE ITEM -->
+                        
+                        
+                        <!-- SERVICE ITEM -->
+                        <li class="service-item scroll-animated">
+                           
+                           
+                            <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapse-item-2" aria-expanded="false">{{NPM}}</button>
+                            
+                            
+                            <!-- COLLAPSE CONTENT -->
+                            <div class="collapse" id="collapse-item-2">
+                               
+                               
+                                <!-- COLLAPSE CONTENT INNER -->
+                                <div class="well">
+                                   
+                                    <p> {{detail}}</p>
+                                    
+                                </div>
+                                <!-- /COLLAPSE CONTENT INNER -->
+                                
+                                
+                            </div>
+                            <!-- /COLLAPSE CONTENT -->
+                            
+                            
+                        </li>
+                        <!-- /SERVICE ITEM -->
+                        
+                        
+                        <!-- SERVICE ITEM -->
+                        <li class="service-item scroll-animated">
+                           
+                           
+                            <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapse-item-3" aria-expanded="false">{{Asal}}</button>
+                            
+                            
+                            <!-- COLLAPSE CONTENT -->
+                            <div class="collapse" id="collapse-item-3">
+                               
+                               
+                                <!-- COLLAPSE CONTENT INNER -->
+                                <div class="well">
+                                   
+                                    <p> {{detail}}</p>
+                                    
+                                </div>
+                                <!-- /COLLAPSE CONTENT INNER -->
+                                
+                                
+                            </div>
+                            <!-- /COLLAPSE CONTENT -->
+                            
+                            
+                        </li>
+                        <!-- /SERVICE ITEM -->
+                        
+                        
+                        <!-- SERVICE ITEM -->
+                        <li class="service-item scroll-animated">
+                           
+                           
+                            <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapse-item-4" aria-expanded="false">{{Email}}</button>
+                            
+                            
+                            <!-- COLLAPSE CONTENT -->
+                            <div class="collapse" id="collapse-item-4">
+                               
+                               
+                                <!-- COLLAPSE CONTENT INNER -->
+                                <div class="well">
+                                   
+                                    <p> {{detail}}</p>
+                                    
+                                </div>
+                                <!-- /COLLAPSE CONTENT INNER -->
+                                
+                                
+                            </div>
+                            <!-- /COLLAPSE CONTENT -->
+                            
+                            
+                        </li>
+                        <!-- /SERVICE ITEM -->
+                        
+                        
+                    </ul>
+                    <!-- /SERVICE LIST -->
+
+
+                </section>
+                <!-- /SERVICE -->
+                
+                <!-- FOOTER -->
+                <section id="footer">
+                
+                   
+                    <!-- SOCIAL ICONS -->
+                    <ul class="social-icons scroll-animated">
+                       
+                       
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        
+                        
+                    </ul>
+                    <!-- /SOCIAL ICONS -->
+                    
+
+
+
+                </section>
+                <!-- /FOOTER -->
+
+
+            </div>
+            <!-- /CONTENT AREA INNER -->
+
+
+        </div>
+        <!-- /CONTENT AREA -->
+        
+        
+        <!-- JAVASCRIPTS -->
+        <script type="text/javascript" src="{% static 'blog/js/plugins.js'%}"></script>
+        <script type="text/javascript" src="{% static 'blog/js/main.js'%}"></script>
+   
+   
+    </body> 
+    
+    
+</html>
