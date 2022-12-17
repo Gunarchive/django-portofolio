@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
        
         <!-- PAGE TITLE -->
-        <title>Ethan - Identity</title>
+        <title>Guna Dharma</title>
        
         <!-- FAVICON -->
         <link rel="shortcut icon" href="{% static 'blog/img/favicon.png'%}">
@@ -232,6 +232,16 @@
                         
                     </ul>
                     <!-- /SERVICE LIST -->
+                <div class="card" > <h1>BLOG</h1>
+                    {% block content-1%}
+{% for v in post %}
+    <div class="bg-white" style="height:400px ; background: rgb(1, 51, 77); border-radius: 3%; box-shadow: 5px 10px #888888; opacity: 75%;">
+      <h3 style="align-items: center; text-align: center;">{{v.tittle}}</h1>
+      <p>{{v.body}}</p>
+    </div>
+{%endfor%}
+{%endblock content-1 %}
+                </div>
 
 
                 </section>

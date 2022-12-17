@@ -1,9 +1,10 @@
 from multiprocessing import context
 from django.shortcuts import render
-
+from .models import Post
 from django.http import HttpResponse
 
 def index(request):
+    db = Post.objects.all()
     context = {
         'Judul' : 'data guna',
         'about' : 'About Me',
@@ -14,6 +15,10 @@ def index(request):
         'HP' : '089516370731',
         'Umur' : '21',
         'Desc' : 'Mahasiswa',
+        'title' : 'Blog',
+        'heading' : 'Blog',
+        'subheading' : 'Postingan',
+        'post' : db,
 
         'detail' : 'Hai guyus kenalin nama saya guna dharma saya berasal dari sumatra barat, pak punten banget saya ngk liat deadline kirain saya sampai minggu depan ternyata kemaren, sorry banget pak, mudah"an punya saya diterima ya pak kwkwkkw, sehat selalu pak trus kapan kita valo nih pak wkkwkwk'
     }
